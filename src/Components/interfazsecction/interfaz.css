@@ -1,0 +1,107 @@
+.interfaz {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5rem;
+    flex-wrap: wrap; /* 🔥 clave para responsive */
+}
+
+/* Contenedor principal */
+.description-interfaz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5rem;
+    max-width: 900px; 
+}
+
+/* Título */
+.description-interfaz h2 {
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: var(--text-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-light);
+    
+    
+    flex-wrap: wrap; 
+}
+
+/* Texto */
+.description-interfaz p {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Grid adaptable */
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.ventajas,
+.desventajas {
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+/* Colores */
+.ventajas h3 {
+    color: #4CAF50;
+}
+
+.desventajas h3 {
+    color: #FF5252;
+}
+
+/* Bullets */
+.ventajas li::marker {
+    color: #4CAF50;
+}
+
+.desventajas li::marker {
+    color: #FF5252;
+}
+
+/* Listas */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+    color: var(--text-light);
+}
+
+.img-interfaz  img {
+    width: 100%;
+    max-width: 900px;
+}
+
+
+@media (max-width: 768px) {
+    .interfaz {
+        padding: 2rem;
+        flex-direction: column; 
+    }
+
+    .description-interfaz {
+        padding: 1rem;
+    }
+
+    .bloques {
+        grid-template-columns: 1fr; 
+    }
+}
+

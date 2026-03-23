@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary: #BB2748;
+
+  --primary-dark: #8E1D36;
+  --primary-darker: #5E1223;
+
+  --primary-light: #D95C77;
+  --primary-lighter: #F2A7B7;
+
+  --bg-light: #FDECEF;
+  --bg-dark: #1F1F1F;
+  --bg-darklight: #292828;
+
+  --text-dark: #374151;
+  --text-light: #FFFFFF;
+
+  --border: #E5E5E5;
+}
+
+/* ancho de la barra */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* fondo */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; 
+}
+
+/* barra */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9e1f3b; 
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #1a1a1a;
+}
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

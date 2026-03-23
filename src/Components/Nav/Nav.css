@@ -1,0 +1,42 @@
+.navar {
+    width: 40%;
+    min-height: 10px;
+    background: var(--bg-darklight);
+    padding: 2.5px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    animation: slideInLeft 0.8s ease-out;
+   border-left: 10px solid lightgreen;
+}
+
+
+.navar h3 {
+    font-size: clamp(13px, 0.9vw, 19px);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 20px;
+
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+    .navar {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
