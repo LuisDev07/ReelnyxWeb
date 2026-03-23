@@ -3,6 +3,7 @@ import "./Hero.css";
 import { FaGithub } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Toastmesaje from "../Toast/Toast";
+import logo from '../../assets/Reelnyx.png'; 
 
 const Hero = () => {
   const [showToast, setShowToast] = useState(false);
@@ -11,7 +12,7 @@ const Hero = () => {
       <div className="contenedor">
         <div className="logo-contenedor">
           <img
-            src="/src/assets/Reelnyx.png"
+            src={logo}
             alt="Reelnyx Logo"
             className="logo-img"
           />

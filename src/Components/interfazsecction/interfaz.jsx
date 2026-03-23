@@ -1,5 +1,6 @@
 
 import "./interfaz.css";
+import interfazimg from '../../assets/interfaz.png'; 
 const interfaz = () => {
   return (
     <div className="interfaz">
@@ -38,7 +39,7 @@ const interfaz = () => {
 
       <div className="img-interfaz">
         <img
-          src="/src/assets/Interfaz.png"
+          src={interfazimg}
           alt="Reelnyx interfaz"
           className="interfaz-img"
         />

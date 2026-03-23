@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import logo from '../../assets/Reelnyx.png'; 
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
 
          <img
-            src="/src/assets/Reelnyx.png"
+            src={logo}
             alt="Reelnyx Logo"
             className="logo-footer"
           />
