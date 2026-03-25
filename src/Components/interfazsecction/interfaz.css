@@ -87,6 +87,7 @@ li {
 .img-interfaz  img {
     width: 100%;
     max-width: 900px;
+    border-radius: 35px;
 }
 
 

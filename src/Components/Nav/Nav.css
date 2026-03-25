@@ -1,7 +1,7 @@
 .navar {
     width: 40%;
     min-height: 10px;
-    background: var(--bg-darklight);
+    background: var(--bg-shadow);
     padding: 2.5px;
     border-radius: 20px;
     margin-top: 15px;
